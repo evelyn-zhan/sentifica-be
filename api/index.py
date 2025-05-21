@@ -32,5 +32,5 @@ def predict_sentiment():
 def handler(environ, start_response):
     return app(environ, start_response)
 
-if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+# if __name__ == "__main__":
+#     app.run(debug=True, port=8000)
