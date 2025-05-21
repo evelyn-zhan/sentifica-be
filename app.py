@@ -1,3 +1,4 @@
+import os
 import joblib
 from flask import Flask, request, jsonify
 
@@ -29,8 +30,7 @@ def predict_sentiment():
     }
     return jsonify(response)
 
-def handler(environ, start_response):
-    return app(environ, start_response)
-
-# if __name__ == "__main__":
-#     app.run(debug=True, port=8000)
+if __name__ == "__main__":
+    # app.run(debug=True, port=8000)
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host="0.0.0.0", port=port)
