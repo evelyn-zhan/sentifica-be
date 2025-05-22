@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+    --txt: #000000;
+    --bg: #ffffff;
+    --prm: #059669;
+    --scd: #EBF7F3;
+    --acc: #6B7280;
+}
+
+[data-theme="dark"] {
+    --txt: #ffffff;
+    --bg: #1E1E1E;
+    --prm: #059669;
+    --scd: #1F4F40;
+    --acc: #6B7280;
+}
+
+@theme inline {
+    --color-text: var(--txt);
+    --color-background: var(--bg);
+    --color-primary: var(--prm);
+    --color-secondary: var(--scd);
+    --color-accent: var(--acc);   
+
+    --breakpoint-2xl: 1400px;
+}
+
+* {
+    font-family: "Manrope", sans-serif;
+    transition: background 0.1s;
+}
