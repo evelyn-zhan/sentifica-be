@@ -12,9 +12,9 @@ vectorizer = joblib.load("model/vectorizer.pkl")
 
 # Map the sentiment label
 sentiment = {
-    0: "negative",
-    1: "neutral",
-    2: "positive"
+    0: "Negative",
+    1: "Neutral",
+    2: "Positive"
 }
 
 @app.route("/")
